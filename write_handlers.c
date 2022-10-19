@@ -217,7 +217,7 @@ int write_pointer(char buffer[], int ind, int length,
 	{
 		for (i = 3; i < width - length + 3; i++)
 			buffer[i] = padd;
-			buffer[i] = '\0';
+		buffer[i] = '\0';
 			if (flags & F_MINUS && padd == ' ')/* Asign extra char to left of buffer */
 			{
 				buffer[--ind] = 'x';
